@@ -12,10 +12,12 @@ namespace KnightTale.Controllers
     public class CastlesController : ControllerBase
     {
     private readonly CastlesService _castlesService;
+    private readonly KnightsService _knightsService;
 
-    public CastlesController(CastlesService castlesService)
+    public CastlesController(CastlesService castlesService, KnightsService knightsService)
     {
       _castlesService = castlesService;
+      _knightsService = knightsService;
     }
 
     [HttpGet]
@@ -45,7 +47,7 @@ namespace KnightTale.Controllers
             return BadRequest(err.Message);
         }
     }
-
+    
     [HttpPost]
     public ActionResult<Castle> Create([FromBody] Castle newCastle)
     {
