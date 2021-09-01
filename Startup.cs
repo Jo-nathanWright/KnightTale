@@ -42,6 +42,9 @@ namespace KnightTale
             
             services.AddScoped<AccountsRepository>();
             services.AddScoped<AccountService>();
+
+            services.AddTransient<CastlesService>();
+            services.AddTransient<CastlesRepository>();
         }
 
         private void ConfigureCors(IServiceCollection services)
