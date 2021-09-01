@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace KinghtTale.Models
+namespace KnightTale.Models
 {
     public class Account
     {

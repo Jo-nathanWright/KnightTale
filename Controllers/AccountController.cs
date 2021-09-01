@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using KinghtTale.Models;
-using KinghtTale.Services;
+using KnightTale.Models;
+using KnightTale.Services;
 using CodeWorks.Auth0Provider;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KinghtTale.Controllers
+namespace KnightTale.Controllers
 {
     [ApiController]
     [Route("[controller]")]

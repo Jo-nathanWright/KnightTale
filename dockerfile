@@ -1,4 +1,4 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0
-COPY ./KinghtTale/bin/Release/net5.0/publish/ App/
+COPY ./KnightTale/bin/Release/net5.0/publish/ App/
 WORKDIR /App
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet KinghtTale.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet KnightTale.dll

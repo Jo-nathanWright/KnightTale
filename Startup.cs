@@ -14,10 +14,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using MySqlConnector;
-using KinghtTale.Repositories;
-using KinghtTale.Services;
+using KnightTale.Repositories;
+using KnightTale.Services;
 
-namespace KinghtTale
+namespace KnightTale
 {
     public class Startup
     {
@@ -36,7 +36,7 @@ namespace KinghtTale
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "KinghtTale", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "KnightTale", Version = "v1" });
             });
             services.AddScoped<IDbConnection>(x => CreateDbConnection());
             
@@ -89,7 +89,7 @@ namespace KinghtTale
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "KinghtTale v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "KnightTale v1"));
                 app.UseCors("CorsDevPolicy");
             }
 

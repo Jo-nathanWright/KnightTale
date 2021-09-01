@@ -1,8 +1,8 @@
 using System.Data;
-using KinghtTale.Models;
+using KnightTale.Models;
 using Dapper;
 
-namespace KinghtTale.Repositories
+namespace KnightTale.Repositories
 {
     public class AccountsRepository
     {

@@ -1,7 +1,7 @@
-using KinghtTale.Models;
-using KinghtTale.Repositories;
+using KnightTale.Models;
+using KnightTale.Repositories;
 
-namespace KinghtTale.Services
+namespace KnightTale.Services
 {
     public class AccountService
     {
